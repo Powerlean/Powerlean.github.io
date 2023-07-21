@@ -63,7 +63,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
 
 body {
-  margin: 5rem;
+  margin: 0.5rem;
   font-family: "Segoe UI", "Helvetica Neue", "Arial";
   font-size: 1rem;
   font-weight: 400;
@@ -82,6 +82,7 @@ hr {
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
+  margin-right: 0.5rem;
   margin-bottom: 0.5rem; }
 
 p {
