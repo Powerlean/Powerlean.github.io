@@ -4,6 +4,7 @@ title:  The new brand identify of Nice Network
 categories: [ brand identify ]
 image: assets/images/nice_1.jpg
 ---
+<video src="/assets/images/nice_1.mp4"></video>
 ![](/assets/images/nice_7.jpg)
 ![](/assets/images/nice_6.jpg)
 ![](/assets/images/nice_5.jpg)
