@@ -2,7 +2,7 @@
 layout: post
 title:  The new brand identify of Nice Network
 categories: [ brand identify ]
-image: assets/images/nice_1.jpg
+image: assets/images/nice_1.gif
 ---
 ![](/assets/images/nice_1.gif)
 ![](/assets/images/nice_7.jpg)
