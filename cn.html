@@ -18,14 +18,14 @@ description: "品牌咨询, Brand Consulting Services, The MeMeCat, design"
 </br>
 <div class="row remove-site-content-margin">
     <div class="card-body px-0 pb-0 d-flex flex-column align-items-start">
-    <h1 class="h1 font-weight-bold" style="font-size:52px;font-family:manrope;">
+    <h1 class="h1 font-weight-bold" style="font-size:52px;">
 
 通过设计协助您脱离</br>同质化的桎梏，</br>
 企及更多机会。
     
     </h1>
     </br>
-    <h3 style="font-family:manrope;">
+    <h3>
     我们的品牌设计与咨询更着眼于您的未来。 </br> 受信于 100+ 的企业和个人。
     </h3>
     </br> </br> 
@@ -34,7 +34,7 @@ description: "品牌咨询, Brand Consulting Services, The MeMeCat, design"
         <div class="mb-3 d-flex align-items-center">                
                 {% if second_post.image %}
                 <div class="col-md-4">
-                <a href="{{site.baseurl}}{{second_post.url}}">
+                <a href="{{site.baseurl}}/cn/{{second_post.url}}">
                  <img class="w-100" src="{% if second_post.image contains "://" %}{{ second_post.image }}{% else %}{{ second_post.image | absolute_url }}{% endif %}" alt="{{ second_post.title }}">
                 </a>
                 </div>
