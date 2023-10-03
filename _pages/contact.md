@@ -5,8 +5,8 @@ permalink: "/contact.html"
 
 <form action="https://formspree.io/f/xaygpakq" method="POST">    
 <p class="mb-4">Please send your message to us. We will reply as soon as possible!</p>
-  <p class="mb-4">Or you can connect with us via **Telegram**.
-  </br>Our Telegram: [@SolarisEco](t.me/SolarisEco) </p>
+  <p class="mb-4">Or you can connect with us via</p> **Telegram**.
+  </br><p>Our Telegram</p>: [@SolarisEco](t.me/SolarisEco)
     
 <div class="form-group row">
 <div class="col-md-6">
