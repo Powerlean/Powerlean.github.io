@@ -7,9 +7,9 @@ permalink: "/contact.html"
 <p class="mb-4">Please send your message to us. We will reply as soon as possible!</p>
   <p class="mb-4">Or you can connect with us via:</p>
     
-Telegram: @thememecat
-Threads: @memecatpublic
-X: @memecatpublic
+<p class="mb-4">Telegram: @thememecat</p>
+<p class="mb-4">Threads: @memecatpublic</p>
+<p class="mb-4">X: @memecatpublic</p>
     
 <div class="form-group row">
 <div class="col-md-6">
