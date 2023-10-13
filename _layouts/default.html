@@ -65,7 +65,7 @@
             overflow: hidden; /* 隐藏溢出的内容 */
         }
         .contact-notification a {
-            color: #007BFF; /* 设置超链接颜色为蓝色 */
+            color: #007BFF; /* 设置超链接颜色 */
             text-decoration: none; /* 去除超链接下划线 */
         }
         .contact-notification a:hover {
@@ -74,27 +74,7 @@
         .contact-notification p {
             font-size: 100%; /* 将文字放大一倍 */
         }
-        .back-to-top-button {
-            position: absolute;
-            bottom: 10px; /* 调整按钮位置到通知栏底部 */
-            left: 50%; /* 居中按钮 */
-            transform: translateX(-50%); /* 水平居中 */
-            width: 80px; /* 增加按钮宽度 */
-            height: 40px; /* 恢复按钮原始高度 */
-            background-color: #000;
-            color: #fff;
-            border: none;
-            border-radius: 10px; /* 将按钮设为圆角矩形 */
-            cursor: pointer;
-            font-size: 14px;
-            text-align: center;
-            transform: rotate(0deg);
-            transition: transform 0.2s;
-        }
-
-        .back-to-top-button.clicked {
-            transform: rotate(360deg); /* 点击时旋转按钮 */
-        }
+        
 </style>
 </head>
 
@@ -103,7 +83,7 @@
     <!-- 通知栏内容，显示联系方式 -->
     <div class="contact-notification" id="contact-notification">
         <p>Connect with us on <a href="https://twitter.com/YourTwitterHandle" target="_blank">Twitter</a> and <a href="https://t.me/YourTelegramHandle" target="_blank">Telegram</a></p>
-        <button class="back-to-top-button" id="back-to-top-button" onclick="scrollToTop">UP</button>
+        
     </div>
     
     <!-- Navbar -->
@@ -168,21 +148,7 @@
     </footer>
 
     {% include tracking-footer.html %}
-<script>
-        // JavaScript函数，用于返回网页顶部
-        function scrollToTop() {
-            const button = document.getElementById("back-to-top-button");
-            button.classList.add("clicked"); // 添加 clicked 类来触发按钮旋转
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth" // 使用平滑滚动
-            });
-            // 重置按钮旋转
-            setTimeout(() => {
-                button.classList.remove("clicked");
-            }, 200);
-        }
-    </script>
+
 </body>
 
 </html>
