@@ -74,7 +74,20 @@
         .contact-notification p {
             font-size: 100%; /* 将文字放大一倍 */
         }
-        
+
+    /* 使用媒体查询来定义只在手机端显示通知栏的样式 */
+        @media (max-width: 768px) {
+            .contact-notification {
+                display: block; /* 在小屏幕上显示通知栏 */
+            }
+        }
+
+        /* 使用媒体查询来定义只在电脑端隐藏通知栏的样式 */
+        @media (min-width: 769px) {
+            .contact-notification {
+                display: none; /* 在大屏幕上隐藏通知栏 */
+            }
+        }
 </style>
 </head>
 
