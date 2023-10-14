@@ -26,6 +26,17 @@ description: "品牌咨询, Brand Consulting Services, The MeMeCat, design"
         display: block; /* 显示换行 */
       }
     }
+
+            h1.hero-text {
+                font-size: 52px;
+            }
+
+        /* 对于PC设备，文字大小为62px */
+        @media screen and (min-width: 600px) {
+            h1.hero-text {
+                font-size: 72px;
+            }
+        }
 </style>
     
 <!-- Begin post excerpts, let's highlight the first 4 posts on top -->
@@ -34,7 +45,7 @@ description: "品牌咨询, Brand Consulting Services, The MeMeCat, design"
         <div id="desktopLineBreak">
     </br></br></br></br></br>
     </div>
-    <h1 class="h1 font-weight-bold" style="font-size:52px;font-family:manrope;">
+    <h1 class="hero-text" style="font-family:manrope;">
 We help businesses at critical inflection</br>
 points way, build a better future.
     
