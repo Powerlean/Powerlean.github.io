@@ -37,6 +37,35 @@ description: "品牌咨询, Brand Consulting Services, The MeMeCat, design"
                 font-size: 120px;
             }
         }
+
+    .container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .word {
+    transition: font-size 0.5s;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(5px);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+
+  .container:hover .word {
+    font-size: 130px;
+  }
+
+  .container:hover .overlay {
+    opacity: 1;
+  }
 </style>
     
 <!-- Begin post excerpts, let's highlight the first 4 posts on top -->
@@ -46,7 +75,7 @@ description: "品牌咨询, Brand Consulting Services, The MeMeCat, design"
     
     </div>
     <h1 class="hero-text" style="font-family:manrope;">
-Makes your <span style="color: #c3fb04; text-stroke: 1px solid #000000;">brand</span></br>
+Makes your <span class="container"><span class="word"><span style="color: #c3fb04; text-stroke: 1px solid #000000;">brand</span></span><span class="overlay"></span></span></br>
 more <span style="color: #6473cd; text-stroke: 1px solid #000000;">apealing</span>,</br>it become so <span style="color: #e46464; text-stroke: 1px solid #000000;">credible</span>.
         
     </h1>
