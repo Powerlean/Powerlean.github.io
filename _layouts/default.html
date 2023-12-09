@@ -99,6 +99,18 @@
                 display: none; /* 在大屏幕上隐藏通知栏 */
             }
         }
+    
+    #contact-notification {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+        }
+    
 </style>
 </head>
 
@@ -157,6 +169,18 @@
 
 
     <!-- Footer -->
+    <script>
+        var contactNotification = document.getElementById('contact-notification');
+
+        window.onscroll = function() {
+            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+                contactNotification.style.display = 'block';
+            } else {
+                contactNotification.style.display = 'none';
+            }
+        };
+    </script>
+    
     <footer class="bg-white border-top p-3 text-muted small">
         <div class="container">
         <div class="row align-items-center justify-content-between">
@@ -172,6 +196,7 @@
     </footer>
 
     {% include tracking-footer.html %}
+
 
 </body>
 
