@@ -100,8 +100,8 @@
             }
         }
     
-    #contact-notification {
-            display: none;
+   #contact-notification {
+            display: block;
             position: fixed;
             bottom: 0;
             left: 0;
@@ -109,6 +109,12 @@
             background-color: #f0f0f0;
             padding: 10px;
             text-align: center;
+            transition: opacity 0.5s ease-in-out;
+            opacity: 1;
+        }
+
+        #contact-notification.hidden {
+            opacity: 0;
         }
     
 </style>
@@ -174,9 +180,9 @@
 
         window.onscroll = function() {
             if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-                contactNotification.style.display = 'block';
+                contactNotification.classList.remove('hidden');
             } else {
-                contactNotification.style.display = 'none';
+                contactNotification.classList.add('hidden');
             }
         };
     </script>
