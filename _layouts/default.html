@@ -101,22 +101,9 @@
         }
     
    #contact-notification {
-            display: block;
+            display: none;
             position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background-color: #f0f0f0;
-            padding: 10px;
-            text-align: center;
-            transition: opacity 0.5s ease-in-out;
-            opacity: 1;
-        }
-
-        #contact-notification.hidden {
-            opacity: 0;
-        }
-    
+   }
 </style>
 </head>
 
@@ -126,7 +113,7 @@
     <div class="contact-notification" id="contact-notification">
         <h5 style="font-family:manrope;">(C)TheMeMeCat - London</h5></br>
          <h4 style="font-family:manrope;">Connect with us on : <a href="https://twitter.com/memecatpublic" target="_blank"></br>
-             X: @MeMeCatPublic</br> 
+             WeChat: MeMeCat</br> 
              <a href="https://t.me/thememecat" target="_blank">Telegram: @TheMeMeCat</a></h4>
         
     </div>
@@ -161,6 +148,18 @@
     </div>
 
     <!-- Content -->
+    <script>
+        var contactNotification = document.getElementById('contact-notification');
+
+        window.onscroll = function() {
+            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+                contactNotification.style.display = 'block';
+            } else {
+                contactNotification.style.display = 'none';
+            }
+        };
+    </script>
+    
     <main role="main" class="site-content">
         {{ content }}
     </main>
@@ -175,17 +174,7 @@
 
 
     <!-- Footer -->
-    <script>
-        var contactNotification = document.getElementById('contact-notification');
-
-        window.onscroll = function() {
-            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-                contactNotification.classList.remove('hidden');
-            } else {
-                contactNotification.classList.add('hidden');
-            }
-        };
-    </script>
+    
     
     <footer class="bg-white border-top p-3 text-muted small">
         <div class="container">
