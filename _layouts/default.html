@@ -100,10 +100,7 @@
             }
         }
     
-   #contact-notification {
-            display: none;
-            position: fixed;
-   }
+   
 </style>
 </head>
 
@@ -148,17 +145,7 @@
     </div>
 
     <!-- Content -->
-    <script>
-        var contactNotification = document.getElementById('contact-notification');
-
-        window.onscroll = function() {
-            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-                contactNotification.style.display = 'block';
-            } else {
-                contactNotification.style.display = 'none';
-            }
-        };
-    </script>
+    
     
     <main role="main" class="site-content">
         {{ content }}
