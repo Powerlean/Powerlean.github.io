@@ -1,1 +1,11 @@
----layout: posttitle:  The new brand identify of Ikuyo Networkcategories: [ brand identify ]image: assets/images/ikuyo_1.jpgtags: [featured]---![](/assets/images/ikuyo_1.jpg)![](/assets/images/ikuyo_2.jpg)![](/assets/images/ikuyo_3.png)![](/assets/images/ikuyo_4.svg)
+---
+layout: post
+title:  The new brand identify of Ikuyo Network
+categories: [ brand identify ]
+image: assets/images/ikuyo_1.jpg
+tags: [featured]
+---
+![](/assets/images/tnet_1.svg)
+![](/assets/images/tnet_2.svg)
+![](/assets/images/tnet_3.svg)
+![](/assets/images/tnet_4.svg)
