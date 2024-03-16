@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  The new brand identify of Ikuyo Network
+title:  The new brand identify of Tsunami
 categories: [ brand identify ]
 image: assets/images/tnet_3.svg
 tags: [featured]
