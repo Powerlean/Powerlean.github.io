@@ -4,9 +4,9 @@
         {% for post in site.tags.featured %}                
             
             <span>
-                <h6 style="font-family:manrope;">
+                <h5 style="font-family:manrope;">
                     <a href="{{site.baseurl}}{{ post.url }}" class="text-dark">{{ post.title }}</a>
-                </h6>
+                </h5>
                 <span class="d-block text-muted">
                     In <span class="catlist">
                     {% for category in post.categories %}
