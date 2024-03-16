@@ -2,7 +2,7 @@
 layout: post
 title:  The new brand identify of Ikuyo Network
 categories: [ brand identify ]
-image: assets/images/ikuyo_1.jpg
+image: assets/images/tnet_3.svg
 tags: [featured]
 ---
 ![](/assets/images/tnet_1.svg)
