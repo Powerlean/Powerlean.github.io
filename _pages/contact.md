@@ -1,7 +1,8 @@
 ---
-title: "Contact*"
+title: ""
 permalink: "/contact.html"
 ---
+<h1>CONTACT*</h1>
 <br>
 <form action="https://formspree.io/f/xaygpakq" method="POST">    
 <h1>Please send your message to us. </h1>
