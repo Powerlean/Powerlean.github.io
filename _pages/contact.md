@@ -2,12 +2,11 @@
 title: ""
 permalink: "/contact.html"
 ---
-<h1>CONTACT*</h1>
+<h1>CONTACT</h1>
 <br>
 <form action="https://formspree.io/f/xaygpakq" method="POST">    
-<h1>Please send your message to us. </h1>
-<br>
-<h1>We will reply as soon as possible!</h1>
+<h1>Please send your message to us.
+We will reply as soon as possible!</h1>
 <br>
 <p>Or you can connect with us via:</p>   
 <h2><a href="https://t.me/SolarisEco">Telegram: @thememecat</a></h2>
