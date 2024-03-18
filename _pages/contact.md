@@ -4,12 +4,15 @@ permalink: "/contact.html"
 ---
 <br>
 <form action="https://formspree.io/f/xaygpakq" method="POST">    
-<h1>Please send your message to us. We will reply as soon as possible!</h1>
+<h1>Please send your message to us. </h1>
+<br>
+<h1>We will reply as soon as possible!</h1>
+<br>
 <p>Or you can connect with us via:</p>   
-<h2>Telegram: @thememecat</h2>
-<h2>Threads: @memecatpublic</h2>
-<h2 class="mb-4">X: @memecatpublic</h2>
-    
+<h2><a href="https://t.me/SolarisEco">Telegram: @thememecat</a></h2>
+<h2><a href="https://thememecat.com/assets/images/wechat.jpg">WeChat: thememecat</a></h2>
+<h2><a href="https://twitter.com/MeMeCatPublic">X: @memecatpublic</a></h2>
+<br>    
 <div class="form-group row">
 <div class="col-md-6">
 <input class="form-control" type="text" name="name" placeholder="Name*" required>
