@@ -2,9 +2,9 @@
 title: "Contact*"
 permalink: "/contact.html"
 ---
-
+<br>
 <form action="https://formspree.io/f/xaygpakq" method="POST">    
-</br><h1>Please send your message to us. We will reply as soon as possible!</h1>
+<h1>Please send your message to us. We will reply as soon as possible!</h1>
 <p>Or you can connect with us via:</p>   
 <h2>Telegram: @thememecat</h2>
 <h2>Threads: @memecatpublic</h2>
