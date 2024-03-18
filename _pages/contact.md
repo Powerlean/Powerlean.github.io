@@ -9,6 +9,13 @@ permalink: "/contact.html"
 We will reply as soon as possible!</h1>
 <br>
 <p>Or you can connect with us via:</p>   
+
+  <style>
+    a {
+            color: #000000; /* 设置超链接颜色 */
+    }
+  </style>
+  
 <h2><a href="https://t.me/SolarisEco">Telegram: @thememecat</a></h2>
 <h2><a href="https://thememecat.com/assets/images/wechat.jpg">WeChat: thememecat</a></h2>
 <h2><a href="https://twitter.com/MeMeCatPublic">X: @memecatpublic</a></h2>
