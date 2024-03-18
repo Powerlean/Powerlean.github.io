@@ -1,15 +1,14 @@
 ---
-title: "Contact"
+title: "Contact*"
 permalink: "/contact.html"
 ---
 
 <form action="https://formspree.io/f/xaygpakq" method="POST">    
-<p class="mb-4">Please send your message to us. We will reply as soon as possible!</p>
-  <p class="mb-4">Or you can connect with us via:</p>
-    
-<p class="mb-4">Telegram: @thememecat</p>
-<p class="mb-4">Threads: @memecatpublic</p>
-<p class="mb-4">X: @memecatpublic</p>
+</br><h1>Please send your message to us. We will reply as soon as possible!</h1>
+<p>Or you can connect with us via:</p>   
+<h2>Telegram: @thememecat</h2>
+<h2>Threads: @memecatpublic</h2>
+<h2 class="mb-4">X: @memecatpublic</h2>
     
 <div class="form-group row">
 <div class="col-md-6">
