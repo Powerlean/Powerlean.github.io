@@ -2,7 +2,7 @@
 title: "CONTACT"
 permalink: "/contact.html"
 ---
-<br>
+<h1>GMT+8</h1>
 <form action="https://formspree.io/f/xaygpakq" method="POST">    
 <h1>Please send your message to us.
 We will reply as soon as possible!</h1>
