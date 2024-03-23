@@ -11,7 +11,11 @@ We will reply as soon as possible!</h1>
 <br>
 <p>Or you can connect with us via:</p>   
 
-  
+<style>
+a {
+  color: blue; /* 设置所有超链接的文本颜色为蓝色 */
+}
+</style>
   
 <h2><a href="https://t.me/SolarisEco">Telegram: @thememecat</a></h2>
 <h2><a href="https://thememecat.com/assets/images/wechat.jpg">WeChat: thememecat</a></h2>
