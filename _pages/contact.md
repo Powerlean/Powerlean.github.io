@@ -2,7 +2,9 @@
 title: "CONTACT"
 permalink: "/contact.html"
 ---
-<h1>GMT+8</h1>
+<h1>GMT+8 </h1><p id="time"></p>
+<script src="/assets/js/timezone.js"></script>
+
 <form action="https://formspree.io/f/xaygpakq" method="POST">    
 <h1>Please send your message to us.
 We will reply as soon as possible!</h1>
