@@ -4,7 +4,7 @@ permalink: "/contact.html"
 ---
 <h1 style="color: blue;">GMT+8 <p id="time"></p> </h1>
 <script type="text/javascript" src="/assets/js/timezone.js"></script>
-<br>
+
 <form action="https://formspree.io/f/xaygpakq" method="POST">    
 <h1>Please send your message to us.
 We will reply as soon as possible!</h1>
