@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  The new brand identify of Uni Network
+title: Uni Network
 categories: [ brand identify ]
 image: assets/images/uni_1.jpg
 tags: [featured]
