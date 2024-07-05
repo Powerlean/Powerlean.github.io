@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  The new brand identify of Hyper Cat
+title:  Hyper Cat
 categories: [ brand identify ]
 image: assets/images/hypercat_1.png
 ---
