@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  The new brand identify of vax
+title:  vax
 categories: [ brand identify ]
 image: assets/images/vax_1.jpg
 tags: [featured]
