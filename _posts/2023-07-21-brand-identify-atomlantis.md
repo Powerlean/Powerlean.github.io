@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The new brand identify of Atomlantis Cloud"
+title:  "Atomlantis Cloud"
 categories: [ brand identify ]
 image: assets/images/atomlantis_2.jpg
 tags: [featured]
