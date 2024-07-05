@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  The new brand identify of Tsunami
+title:  Tsunami Net
 categories: [ brand identify ]
 image: assets/images/tnet_3.svg
 tag: [ featured ]
