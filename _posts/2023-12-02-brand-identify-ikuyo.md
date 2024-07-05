@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  The new brand identify of Ikuyo Network
+title: Ikuyo Network
 categories: [ brand identify ]
 image: assets/images/ikuyo_1.jpg
 tags: [featured]
