@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The new brand identify of Okay Pay"
+title:  "Okay Pay"
 categories: [ brand identify ]
 image: assets/images/okaypay_1.jpg
 ---
