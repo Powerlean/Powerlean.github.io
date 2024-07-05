@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  The new brand identify of coincome
+title:  coincome
 categories: [ brand identify ]
 image: assets/images/coincome_1.svg
 tags: [featured]
