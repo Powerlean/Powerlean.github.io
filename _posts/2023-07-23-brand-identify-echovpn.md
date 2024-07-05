@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  The new brand identify of Echo VPN
+title: Echo VPN
 categories: [ brand identify ]
 image: assets/images/echovpn_3.jpg
 ---
