@@ -62,6 +62,18 @@ h1, h2, h3, h4 {
                 display: block;
             }
         }
+
+     /* 默认情况下隐藏div内容 */
+        div.desktop-only {
+            display: none;
+        }
+
+        /* 当屏幕宽度大于等于768px（一般是平板或桌面端）时显示div内容 */
+        @media (min-width: 768px) {
+            div.desktop-only {
+                display: block;
+            }
+        }
   
 </style>
     
@@ -105,7 +117,7 @@ more apealing,</br>it become so credible.</br>
          </br>
         individuals.
     </h4></div>
-        <div id = "right_box">
+        <div id = "right_box" class="desktop-only">
     <h1 style="font-family:manrope;" class="desktop-only"><a href="/work" style="color: #FBF604;text-decoration:underline;">
          </br>
     ENTER&#8594;
