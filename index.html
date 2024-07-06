@@ -48,7 +48,21 @@ h1, h2, h3, h4 {
     body {
             background-color: #000000; /* 设置背景颜色为蓝黑色 */
         }
-        
+
+
+
+        /* 默认情况下隐藏h1内容 */
+        h1.desktop-only {
+            display: none;
+        }
+
+        /* 当屏幕宽度大于等于768px（一般是平板或桌面端）时显示h1内容 */
+        @media (min-width: 768px) {
+            h1.desktop-only {
+                display: block;
+            }
+        }
+  
 </style>
     
 <!-- Begin post excerpts, let's highlight the first 4 posts on top -->
@@ -92,7 +106,7 @@ more apealing,</br>it become so credible.</br>
         individuals.
     </h4></div>
         <div id = "right_box">
-    <h1 style="font-family:manrope;"><a href="/work" style="color: #FBF604;text-decoration:underline;">
+    <h1 style="font-family:manrope;" class="desktop-only"><a href="/work" style="color: #FBF604;text-decoration:underline;">
          </br>
     ENTER&#8594;
     </a></h1></div>
