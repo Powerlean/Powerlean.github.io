@@ -9,9 +9,9 @@ permalink: "/work.html"
         <div class="col-md-8">
        
         {% for category in site.categories %} 
-        <h1 id="{{ category[1] | downcase }}"><span>{{ category[1] }} </span></h1>
+        <h1 id="{{ category[0] | downcase }}"><span>{{ category[0] }} </span></h1>
         </br>
-        {% assign pages_list = category[0] %}
+        {% assign pages_list = category[1] %}
         {% for post in pages_list %}
         {% if post.title != null %}
           {% if group == null or group == post.group %}
