@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Tsunami Net
-categories: [ brand identify ]
+categories: [ 品牌识别<br>brand identify ]
 image: assets/images/tnet_3.svg
 tag: [ featured ]
 ---
