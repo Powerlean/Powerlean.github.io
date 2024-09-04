@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Echo VPN
-categories: [ archived ]
+categories: [ 归档<br>archived ]
 ---
 ![](/assets/images/echovpn_3.jpg)
 ![](/assets/images/echovpn_2.jpg)
