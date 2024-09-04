@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Nice Network
-categories: [ brand identify ]
+categories: [ 品牌识别<br>brand identify ]
 image: assets/images/nice_1.gif
 ---
 ![](/assets/images/nice_1.jpg)
