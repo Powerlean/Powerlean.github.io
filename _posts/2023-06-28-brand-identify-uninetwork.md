@@ -1,9 +1,8 @@
 ---
 layout: post
 title: Uni Network
-categories: [ brand identify ]
+categories: [ 归档<br>archived ]
 image: assets/images/uni_1.jpg
-tags: [归档<br>archived]
 ---
 ![](/assets/images/uni_1.jpg)
 
