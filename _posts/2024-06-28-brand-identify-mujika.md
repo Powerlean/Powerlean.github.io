@@ -1,7 +1,7 @@
 ---
 layout: post
 title: mujika
-categories: [ brand identify ]
+categories: [ 品牌识别<br>brand identify ]
 image: assets/images/mujika_2.svg
 tags: [featured]
 ---
