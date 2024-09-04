@@ -1,9 +1,7 @@
 ---
 layout: post
 title:  coincome
-categories: [ brand identify ]
-image: assets/images/coincome_1.svg
-tags: [featured]
+categories: [ 归档<br>archived ]
 ---
 ![](/assets/images/coincome_1.svg)
 ![](/assets/images/coincome_2.svg)
