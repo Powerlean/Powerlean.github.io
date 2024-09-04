@@ -10,7 +10,7 @@ permalink: "/work.html"
        
         {% for category in site.categories %} 
         <h1 id="{{ category[0] | downcase }}"><span>{{ category[0] }} </span></h1>
-        </br>
+        </br></br>
         {% assign pages_list = category[1] %}
         {% for post in pages_list %}
         {% if post.title != null %}
