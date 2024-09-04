@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  vax
-categories: [ brand identify ]
+categories: [ 品牌识别<br>brand identify ]
 image: assets/images/vax_1.jpg
 tags: [featured]
 ---
