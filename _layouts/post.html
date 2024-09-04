@@ -11,7 +11,7 @@ layout: default
 						<h1>
                         <span>
 						{% for category in page.categories %}
-                          <a href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category | downcase }}</a>
+                          <a>{{ category | downcase }}</a>
                         {% endfor %}
                         </span>
 						</h1>
