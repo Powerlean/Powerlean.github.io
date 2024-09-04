@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  OMNI
-categories: [ brand identify ]
+categories: [ 品牌识别<br>brand identify ]
 image: assets/images/omni_1.svg
 tags: [featured]
 ---
