@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  凌武
-categories: [ brand identify ]
+categories: [ 品牌识别<br>brand identify ]
 image: assets/images/lwsec_1.svg
 tags: [featured]
 ---
