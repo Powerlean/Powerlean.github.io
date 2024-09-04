@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Hyper Cat
-categories: [ brand identify ]
+categories: [ 品牌识别<br>brand identify ]
 image: assets/images/hypercat_1.png
 ---
 ![](/assets/images/hypercat_4.png)
