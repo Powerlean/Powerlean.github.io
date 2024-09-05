@@ -4,10 +4,6 @@ permalink: "/contact.html"
 ---
 
 <div id = "box">
-<div id = "left_box">
-<h1>联系<br>contact</h1>
-</div>
-  
 <div id = "center_box">
 <h1>GMT+8 <p id="time"></p></h1>
 </div>
