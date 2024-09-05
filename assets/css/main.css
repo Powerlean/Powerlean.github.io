@@ -224,9 +224,9 @@ select,
 optgroup,
 textarea {
   margin: 0;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit; }
+  font-family: manrope;
+  font-size: manrope;
+  line-height: manrope; }
 
 button,
 input {
