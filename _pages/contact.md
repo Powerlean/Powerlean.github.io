@@ -1,16 +1,17 @@
 ---
-title: "CONTACT"
+title: "联系<br>contact"
 permalink: "/contact.html"
 ---
-<h1 style="color: blue;">GMT+8 <p id="time"></p> </h1>
+<h1>GMT+8 <p id="time"></p> </h1>
 <script type="text/javascript" src="/assets/js/timezone.js"></script>
 
 <form action="https://formspree.io/f/xaygpakq" method="POST">    
 <h1>Please send your message to us.
-We will reply as soon as possible!</h1>
+We will reply ASAP!</h1>
+  <h1>请将您的信息填入下方表格，我们会尽快与您取得联系！</h1>
 <br>
-<p>Or you can connect with us via:</p>   
-
+<h4>Or you can connect with us via:</h4>   
+<h4>或通过以下平台联系我们:</h4> 
 <style>
 a {
   color: blue; /* 设置所有超链接的文本颜色为蓝色 */
