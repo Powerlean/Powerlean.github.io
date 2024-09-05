@@ -1,7 +1,11 @@
 ---
-title: "联系<br>contact"
+title: "contact"
 permalink: "/contact.html"
 ---
+<div class="container">
+<h1>联系<br>contact</h1>
+<div class="page-content">
+  <br><br>
 <h1>GMT+8 <p id="time"></p> </h1>
 <script type="text/javascript" src="/assets/js/timezone.js"></script>
 
