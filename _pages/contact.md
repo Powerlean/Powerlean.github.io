@@ -11,6 +11,7 @@ permalink: "/contact.html"
 <div id = "center_box">
 <h1>GMT+8 <p id="time"></p></h1>
 </div>
+</div>
 
 <script type="text/javascript" src="/assets/js/timezone.js"></script>
 
