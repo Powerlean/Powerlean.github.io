@@ -1787,9 +1787,9 @@ fieldset:disabled a.btn {
       box-shadow: 0 0 0 0.2rem rgba(120, 50, 226, 0.5); }
 
 .btn-success {
-  color: #fff;
-  background-color: #03a87c;
-  border-color: #03a87c; }
+  color: #000000;
+  background-color: #FAF504;
+  border-color: #000000; }
   .btn-success:hover {
     color: #fff;
     background-color: #028260;
