@@ -16,7 +16,7 @@ tags: [featured]
 
 <figure class="half">
 <h1>The Poke bowl is a gift of marine.Inspire by the lively ocean & dining experience, we adopts an immersive and bright color palette along with a vibrant composition for its new brand identity.</h1>
-<h2>Poke bowl是源于海洋的馈赠，启发于海洋的活泼和poke bowl的用餐方式，新的品牌形象采用了更沉浸明透的配色与富有活力的构图。</h2>
+<h2>Poke bowl来源于海洋的馈赠。启发于海的活泼和poke的用餐方式，新的品牌形象采用了更沉浸明透的配色与富有活力的构图。</h2>
 </figure>
 <img align="right" src="/assets/images/heypoke_4.svg">
 
