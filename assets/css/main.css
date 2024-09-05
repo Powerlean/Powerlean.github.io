@@ -1797,9 +1797,9 @@ fieldset:disabled a.btn {
   .btn-success:focus, .btn-success.focus {
     box-shadow: 0 0 0 0.2rem rgba(3, 168, 124, 0.5); }
   .btn-success.disabled, .btn-success:disabled {
-    color: #fff;
-    background-color: #03a87c;
-    border-color: #03a87c; }
+    color: #000000;
+    background-color: #FAF504;
+    border-color: #FAF504; }
   .btn-success:not(:disabled):not(.disabled):active, .btn-success:not(:disabled):not(.disabled).active,
   .show > .btn-success.dropdown-toggle {
     color: #fff;
