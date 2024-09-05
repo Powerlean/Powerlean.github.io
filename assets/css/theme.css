@@ -31,10 +31,10 @@ a,a:hover {
 	text-decoration:none;
 }
 a {
-	color:#03a87c;
+	color:#FAF504;
 }
 a.text-dark:hover {
-	color:#03a87c !important;
+	color:#FAF504 !important;
 }
 .c-pointer:hover {
 	cursor:pointer;
