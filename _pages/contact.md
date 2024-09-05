@@ -14,7 +14,7 @@ We will reply ASAP!</h1>
 <h4>或通过以下平台联系我们:</h4> 
 <style>
 a {
-  color: blue; /* 设置所有超链接的文本颜色为蓝色 */
+  color: #FAF504; /* 设置所有超链接的文本颜色为蓝色 */
 }
 </style>
   
