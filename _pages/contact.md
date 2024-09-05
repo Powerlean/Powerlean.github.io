@@ -2,11 +2,16 @@
 title: "contact"
 permalink: "/contact.html"
 ---
-<div class="container">
+
+<div id = "box">
+<div id = "left_box">
 <h1>联系<br>contact</h1>
-<div class="page-content">
-  <br><br>
-<h1>GMT+8 <p id="time"></p> </h1>
+</div>
+  
+<div id = "center_box">
+<h1>GMT+8 <p id="time"></p></h1>
+</div>
+
 <script type="text/javascript" src="/assets/js/timezone.js"></script>
 
 <form action="https://formspree.io/f/xaygpakq" method="POST">    
