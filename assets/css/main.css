@@ -1791,9 +1791,9 @@ fieldset:disabled a.btn {
   background-color: #FAF504;
   border-color: #000000; }
   .btn-success:hover {
-    color: #fff;
-    background-color: #028260;
-    border-color: #027657; }
+    color: #FAF504;
+    background-color: #000000;
+    border-color: #FAF504; }
   .btn-success:focus, .btn-success.focus {
     box-shadow: 0 0 0 0.2rem rgba(3, 168, 124, 0.5); }
   .btn-success.disabled, .btn-success:disabled {
