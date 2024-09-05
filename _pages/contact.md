@@ -9,7 +9,19 @@ permalink: "/contact.html"
 <h1>Please send your message to us.
 We will reply ASAP!</h1>
   <h2>请将您的信息填入下方表格，我们会尽快与您取得联系！</h2>
-<br><br>
+<br>
+<div class="form-group row">
+<div class="col-md-6">
+<input class="form-control" type="text" name="name" placeholder="Name - 称呼" required>
+</div>
+<div class="col-md-6">
+<input class="form-control" type="email" name="_replyto" placeholder="E-mail Address - 邮箱地址" required>
+</div>
+</div>
+<textarea rows="8" class="form-control mb-3" name="message" placeholder="Message - 信息正文" required></textarea>    
+<input class="btn btn-success" type="submit" value="Send">
+</form>
+
 <h3>Or you can connect with us via:</h3>   
 <h4>或通过以下平台联系我们:</h4> 
 <style>
@@ -22,14 +34,3 @@ a {
 <h2><a href="https://thememecat.com/assets/images/wechat.jpg">WeChat: thememecat</a></h2>
 <h2><a href="https://twitter.com/MeMeCatPublic">X: @memecatpublic</a></h2>
 <br>    
-<div class="form-group row">
-<div class="col-md-6">
-<input class="form-control" type="text" name="name" placeholder="Name - 称呼" required>
-</div>
-<div class="col-md-6">
-<input class="form-control" type="email" name="_replyto" placeholder="E-mail Address - 邮箱地址" required>
-</div>
-</div>
-<textarea rows="8" class="form-control mb-3" name="message" placeholder="Message - 信息正文" required></textarea>    
-<input class="btn btn-success" type="submit" value="Send">
-</form>
