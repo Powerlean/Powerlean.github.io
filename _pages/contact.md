@@ -8,9 +8,9 @@ permalink: "/contact.html"
 <form action="https://formspree.io/f/xaygpakq" method="POST">    
 <h1>Please send your message to us.
 We will reply ASAP!</h1>
-  <h1>请将您的信息填入下方表格，我们会尽快与您取得联系！</h1>
-<br>
-<h4>Or you can connect with us via:</h4>   
+  <h2>请将您的信息填入下方表格，我们会尽快与您取得联系！</h2>
+<br><br>
+<h3>Or you can connect with us via:</h3>   
 <h4>或通过以下平台联系我们:</h4> 
 <style>
 a {
