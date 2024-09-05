@@ -24,12 +24,12 @@ a {
 <br>    
 <div class="form-group row">
 <div class="col-md-6">
-<input class="form-control" type="text" name="name" placeholder="Name / 称呼*" required>
+<input class="form-control" type="text" name="name" placeholder="Name - 称呼" required>
 </div>
 <div class="col-md-6">
-<input class="form-control" type="email" name="_replyto" placeholder="E-mail Address / 邮箱地址*" required>
+<input class="form-control" type="email" name="_replyto" placeholder="E-mail Address - 邮箱地址" required>
 </div>
 </div>
-<textarea rows="8" class="form-control mb-3" name="message" placeholder="Message / 信息正文*" required></textarea>    
+<textarea rows="8" class="form-control mb-3" name="message" placeholder="Message - 信息正文" required></textarea>    
 <input class="btn btn-success" type="submit" value="Send">
 </form>
