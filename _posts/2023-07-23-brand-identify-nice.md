@@ -2,7 +2,7 @@
 layout: post
 title:  Nice Network
 categories: [ 品牌识别<br>brand identify ]
-image: assets/images/nice_1.gif
+image: assets/images/nice_4.jpg
 ---
 ![](/assets/images/nice_1.jpg)
 ![](/assets/images/nice_7.jpg)
