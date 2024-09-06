@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  coincome
-categories: [ <div class="desktop-only">归档<br>archived</div> ]
+categories: [ 归档<br>archived ]
 ---
 ![](/assets/images/coincome_1.svg)
 ![](/assets/images/coincome_2.svg)
