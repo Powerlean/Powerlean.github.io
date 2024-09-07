@@ -91,12 +91,18 @@
             .contact-notification {
                 display: block; /* 在小屏幕上显示通知栏 */
             }
+            .mobile-only {
+                display: block;
+            }
         }
 
         /* 使用媒体查询来定义只在电脑端隐藏通知栏的样式 */
         @media (min-width: 769px) {
             .contact-notification {
                 display: none; /* 在大屏幕上隐藏通知栏 */
+            }
+            .mobile-only {
+                display: none;
             }
         }
     
