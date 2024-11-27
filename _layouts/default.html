@@ -229,14 +229,25 @@ h1, h2, h3, h4 {
 
     <!-- Footer -->
     <br><br><br>
-    
+ 
+
 <footer>
-    
-    <div class="container desktop-only">
-    <div style="float:left;"><img src="/assets/images/thememecat_horizon.svg" width="207" height="50"></div>
-    <div style="float:right; vertical-align:middle;"><h4>TheMeMeCat © <script>document.write(new Date().getFullYear())</script></h4></div>
+
+    <div class="container desktop-only" style="display: flex; justify-content: space-between; align-items: center;">
+        <div>
+            <img src="/assets/images/thememecat_horizon.svg" width="207" height="50" alt="TheMeMeCat Logo">
+        </div>
+        <div>
+            <h4>TheMeMeCat © <span id="current-year"></span></h4>
+        </div>
     </div>
-    
+</footer>
+
+<script>
+    // 动态插入当前年份
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
+
 </footer>
              
     {% include tracking-footer.html %}
