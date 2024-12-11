@@ -1,7 +1,7 @@
 ---
-title: "职务信息"
+title: "常见问题"
 layout: default
-permalink: "/info.html"
+permalink: "/how.html"
 ---
 # 我们如何定价？
 我们的定价会基于您的实际情况进行评估落实，主要参考要素如下：
