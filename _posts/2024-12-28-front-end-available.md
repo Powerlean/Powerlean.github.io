@@ -16,7 +16,7 @@ tags: [featured]
 ## 更灵活：
 - 门类齐全，可指定编程语言和相应框架，并可进行更改。
   
-[](/assets/images/front-end-2.svg)
+![](/assets/images/front-end-2.svg)
 
 Seamless Transition from Design to Development - New frontend development technical support enables faster and more accurate transformation of design prototypes into actual products
 <br>
