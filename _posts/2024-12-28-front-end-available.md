@@ -2,7 +2,7 @@
 layout: post
 title:  新增前端开发业务
 categories: [ 品牌识别<br>brand identify ]
-image: assets/images/omni_1.svg
+image: assets/images/front-end-1.svg
 tags: [featured]
 ---
 
