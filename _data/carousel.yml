@@ -1,7 +1,7 @@
 items:
   - image: heypoke_1.svg
     title: HeyPoke
-    description: 创新夏威夷简餐
+    description: Innovative Hawaiian cuisine
     alt: 
   - image: omni_1.svg
     title: OMNI
@@ -13,5 +13,5 @@ items:
     alt: 
   - image: global.svg
     title: WORLD-IN-MY-MIND
-    description: 我们渴望远方的伙伴
+    description: We long for friends from afar
     alt: 
