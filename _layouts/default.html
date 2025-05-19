@@ -172,8 +172,32 @@ h1, h2, h3, h4 {
             }
         }
 
-
+    /* 导航菜单中文翻译悬停效果 */
+    .menu-item {
+        position: relative;
+        display: inline-block;
+    }
     
+    .menu-item .cn-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    
+    .menu-item .en-text {
+        opacity: 1;
+        transition: opacity 0.3s ease;
+    }
+    
+    .menu-item:hover .cn-text {
+        opacity: 1;
+    }
+    
+    .menu-item:hover .en-text {
+        opacity: 0;
+    }
 </style>
 </head>
 
