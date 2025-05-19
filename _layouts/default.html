@@ -176,19 +176,26 @@ h1, h2, h3, h4 {
     .menu-item {
         position: relative;
         display: inline-block;
+        text-align: center;
+        width: 100%;
     }
     
     .menu-item .cn-text {
         position: absolute;
         top: 0;
         left: 0;
+        right: 0;
         opacity: 0;
         transition: opacity 0.3s ease;
+        text-align: center;
+        width: 100%;
     }
     
     .menu-item .en-text {
         opacity: 1;
         transition: opacity 0.3s ease;
+        text-align: center;
+        width: 100%;
     }
     
     .menu-item:hover .cn-text {
