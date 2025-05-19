@@ -109,6 +109,19 @@ description: "品牌咨询, Brand Consulting Services, The MeMeCat, Graphic Desi
     font-family: manrope;
     pointer-events: none;
 }
+
+/* 轮播图链接样式 */
+.carousel-link {
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    cursor: pointer;
+}
+.carousel-link:hover {
+    text-decoration: none;
+}
 </style>
 
 <div class="container-fluid px-0">
@@ -116,11 +129,13 @@ description: "品牌咨询, Brand Consulting Services, The MeMeCat, Graphic Desi
         <div class="carousel-inner">
             {% for item in site.data.carousel.items %}
             <div class="carousel-item {% if forloop.first %}active{% endif %}">
-                <img src="{{site.baseurl}}/assets/images/{{ item.image }}" class="d-block w-100" alt="{{ item.alt }}">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>{{ item.title }}</h5>
-                    <p>{{ item.description }}</p>
-                </div>
+                <a href="{{site.baseurl}}{{ item.link }}" class="carousel-link">
+                    <img src="{{site.baseurl}}/assets/images/{{ item.image }}" class="d-block w-100" alt="{{ item.alt }}">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>{{ item.title }}</h5>
+                        <p>{{ item.description }}</p>
+                    </div>
+                </a>
                 <div class="carousel-nav-left cursor-left" onclick="$('#heroCarousel').carousel('prev')"></div>
                 <div class="carousel-nav-right cursor-right" onclick="$('#heroCarousel').carousel('next')"></div>
             </div>
@@ -155,6 +170,12 @@ document.addEventListener('DOMContentLoaded', function() {
             var translateY = scrolled * 0.3; // 调整这个值可以改变视差效果的强度
             img.style.transform = 'translateY(' + translateY + 'px)';
         });
+    });
+    
+    // 防止左右导航区域的点击事件传递到链接
+    $('.carousel-nav-left, .carousel-nav-right').on('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
     });
 });
 </script>
