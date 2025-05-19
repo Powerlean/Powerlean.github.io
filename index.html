@@ -124,9 +124,28 @@ description: "品牌咨询, Brand Consulting Services, The MeMeCat, Graphic Desi
     height: 100%;
     width: 100%;
     z-index: 3;
-    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='80' viewBox='0 0 150 80'%3E%3Cstyle%3E@keyframes pulse %7B 0%25 %7B opacity: 0.7; %7D 50%25 %7B opacity: 1; %7D 100%25 %7B opacity: 0.7; %7D %7D text %7B animation: pulse 1.5s infinite ease-in-out; %7D%3C/style%3E%3Ctext x='10' y='45' font-family='manrope, Arial' font-size='24' font-weight='normal' fill='%23FBF604'%3EENTER%3C/text%3E%3C/svg%3E") 75 40, pointer;
+    cursor: pointer;
     transition: all 0.3s ease;
 }
+
+/* 添加悬停效果 */
+.carousel-link:hover::after {
+    content: 'ENTER';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FBF604;
+    font-family: manrope, Arial;
+    font-size: 24px;
+    font-weight: normal;
+    padding: 10px 20px;
+    border: 2px solid #FBF604;
+    animation: enterPulse 1.5s infinite ease-in-out;
+    pointer-events: none;
+    z-index: 5;
+}
+
 .carousel-link:hover {
     text-decoration: none;
 }
