@@ -165,11 +165,11 @@ description: "品牌咨询, Brand Consulting Services, The MeMeCat, Graphic Desi
             <div class="carousel-item {% if forloop.first %}active{% endif %}">
                 <div class="carousel-content">
                     <a href="{{site.baseurl}}{{ item.link }}" class="carousel-link">
-                        <img src="{{site.baseurl}}/assets/images/{{ item.image }}" class="d-block w-100" alt="{{ item.alt }}">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>{{ item.title }}</h5>
-                            <p>{{ item.description }}</p>
-                        </div>
+                <img src="{{site.baseurl}}/assets/images/{{ item.image }}" class="d-block w-100" alt="{{ item.alt }}">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>{{ item.title }}</h5>
+                    <p>{{ item.description }}</p>
+                </div>
                     </a>
                 </div>
                 <div class="carousel-nav-left cursor-left" onclick="$('#heroCarousel').carousel('prev'); event.stopPropagation();"></div>
