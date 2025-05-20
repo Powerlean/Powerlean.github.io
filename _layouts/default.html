@@ -57,6 +57,26 @@
         src: url("/assets/manrope.ttf");
     }
 
+    /* 添加底部logo果冻动画效果 */
+    .footer-logo {
+        transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        transform-origin: center;
+    }
+
+    .footer-logo.jelly {
+        animation: jelly 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    @keyframes jelly {
+        0% { transform: scale(1, 1); }
+        30% { transform: scale(1.2, 0.8); }
+        40% { transform: scale(0.8, 1.2); }
+        50% { transform: scale(1.1, 0.9); }
+        65% { transform: scale(0.9, 1.1); }
+        75% { transform: scale(1.05, 0.95); }
+        100% { transform: scale(1, 1); }
+    }
+
     /* 添加底部链接悬停效果 */
     footer a:hover {
         color: #FFFFFF !important;
@@ -270,7 +290,7 @@ h1, h2, h3, h4 {
 <br>
     <div class="container">
         <div style="text-align: center; margin-bottom: 2rem;">
-            <img src="/assets/images/thememecat_horizon.svg" style="width: 100%; max-width: 100%; height: auto; object-fit: cover;" alt="TheMeMeCat Logo">
+            <img src="/assets/images/thememecat_horizon.svg" class="footer-logo" style="width: 100%; max-width: 100%; height: auto; object-fit: cover;" alt="TheMeMeCat Logo">
         </div>
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
             <div style="text-align: left;">
@@ -291,6 +311,34 @@ h1, h2, h3, h4 {
 <script>
     // 动态插入当前年份
     document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    // 添加果冻动画效果
+    document.addEventListener('DOMContentLoaded', function() {
+        const footerLogo = document.querySelector('.footer-logo');
+        let lastScrollTop = 0;
+        let isAnimating = false;
+
+        window.addEventListener('scroll', function() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const windowHeight = window.innerHeight;
+            const documentHeight = document.documentElement.scrollHeight;
+            
+            // 当滚动到页面底部附近时触发动画
+            if (scrollTop + windowHeight >= documentHeight - 100) {
+                if (!isAnimating && scrollTop > lastScrollTop) {
+                    isAnimating = true;
+                    footerLogo.classList.add('jelly');
+                    
+                    // 动画结束后移除类名
+                    setTimeout(() => {
+                        footerLogo.classList.remove('jelly');
+                        isAnimating = false;
+                    }, 800);
+                }
+            }
+            lastScrollTop = scrollTop;
+        });
+    });
 </script>
 </footer>
         
