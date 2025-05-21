@@ -265,24 +265,17 @@ h1, h2, h3, h4 {
     
     /* 搜索图标样式 */
     .search-icon {
-        margin: 0;
         transition: transform 0.3s ease;
-        vertical-align: middle;
-        display: block; /* 使图标成为块级元素 */
-        margin: 0 auto; /* 水平居中 */
-        position: relative; /* 添加定位 */
-        top: 50%; /* 垂直居中 */
-        transform: translateY(-50%); /* 垂直居中 */
+        width: 28px;
+        height: 28px;
+        margin: auto;
     }
     
     .search-link:hover .search-icon {
-        transform: translateY(-50%) scale(1.2); /* 保持垂直居中的同时放大 */
+        transform: scale(1.2);
     }
     
     .search-item .menu-item {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         height: 50px;
     }
     
