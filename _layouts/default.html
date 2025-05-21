@@ -205,6 +205,7 @@ h1, h2, h3, h4 {
         display: inline-block;
         text-align: center;
         width: 100%;
+        margin: 0; /* 移除可能的外边距 */
     }
     
     .menu-item .cn-text {
@@ -264,8 +265,9 @@ h1, h2, h3, h4 {
     
     /* 搜索图标样式 */
     .search-icon {
-        margin-top: 10px;
+        margin: 0; /* 移除之前的margin-top */
         transition: transform 0.3s ease;
+        vertical-align: middle; /* 垂直居中 */
     }
     
     .search-link:hover .search-icon {
@@ -275,6 +277,7 @@ h1, h2, h3, h4 {
     .search-item {
         display: flex;
         align-items: center;
+        height: 50px; /* 与logo的高度保持一致 */
     }
     
     /* 搜索功能样式 */
@@ -391,6 +394,32 @@ h1, h2, h3, h4 {
         display: block;
         animation: searchFadeIn 0.3s ease forwards;
     }
+
+    /* 导航栏样式调整 */
+    .navbar {
+        padding: 0.5rem 1rem; /* 调整导航栏内边距 */
+    }
+
+    .navbar-nav {
+        align-items: center !important; /* 强制垂直居中对齐 */
+    }
+
+    .nav-item {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-link {
+        padding: 0.5rem 1rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-link h2 {
+        margin: 0; /* 移除h2的默认外边距 */
+        font-size: 1.5rem; /* 调整字体大小 */
+        line-height: 50px; /* 与logo的height保持一致 */
+    }
 </style>
 </head>
 
@@ -422,7 +451,7 @@ h1, h2, h3, h4 {
     
     <!-- Navbar -->
     <nav id="MagicMenu" class="topnav navbar navbar-expand-lg navbar-light bg-black fixed-top">
-    <div class="container">
+    <div class="container d-flex align-items-center">
         <a class="navbar-brand" href="/">
             <img src="/assets/images/thememecat.svg" alt="TheMeMeCat" width="80" height="50" class="logo-default" style="user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;">
             <img src="/assets/images/thememecat_full_horizon.svg" alt="TheMeMeCat" width="160" height="50" class="logo-expanded" style="user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;">
@@ -432,7 +461,7 @@ h1, h2, h3, h4 {
         </button>
         <div class="navbar-collapse collapse" id="navbarColor02" style="">
             
-            <ul class="navbar-nav ml-auto d-flex align-items-left">
+            <ul class="navbar-nav ml-auto d-flex align-items-center">
                 
                {% include menu-header.html %}
                     
