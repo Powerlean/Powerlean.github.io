@@ -261,10 +261,139 @@ h1, h2, h3, h4 {
         transform: translateX(0) translateY(-50%); /* 保持垂直居中变换 */
         opacity: 1;
     }
+    
+    /* 搜索功能样式 */
+    .search-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.98);
+        z-index: 9999;
+        display: none;
+        overflow-y: auto;
+    }
+    
+    .search-close {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        color: #FAF504;
+        font-size: 2rem;
+        cursor: pointer;
+        font-weight: 300;
+        font-family: manrope;
+        z-index: 10000;
+        transition: transform 0.3s ease;
+    }
+    
+    .search-close:hover {
+        transform: rotate(90deg);
+    }
+    
+    .search-content {
+        position: relative;
+        width: 80%;
+        max-width: 1000px;
+        margin: 120px auto 0;
+        padding: 0 15px;
+    }
+    
+    .search-form {
+        position: relative;
+        margin-bottom: 50px;
+    }
+    
+    .search-input {
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid #333;
+        background: transparent;
+        padding: 20px 0;
+        font-size: 3rem;
+        color: #FAF504;
+        font-family: manrope;
+        outline: none;
+    }
+    
+    .search-input::placeholder {
+        color: #666;
+        opacity: 1;
+    }
+    
+    .search-results {
+        color: #FAF504;
+    }
+    
+    .search-results h3 {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+        font-family: manrope;
+    }
+    
+    .search-item {
+        margin-bottom: 30px;
+        transition: opacity 0.3s ease;
+    }
+    
+    .search-item h4 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+    
+    .search-item p {
+        color: #ccc;
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+    }
+    
+    .search-item:hover {
+        opacity: 0.7;
+    }
+    
+    .search-link {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    .search-item-link {
+        color: #FAF504;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .search-item-link:hover {
+        text-decoration: underline;
+    }
+
+    @keyframes searchFadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    .search-overlay.active {
+        display: block;
+        animation: searchFadeIn 0.3s ease forwards;
+    }
 </style>
 </head>
 
 <body class="{% if page.url == "/" %} homefirstpage {% endif %}">
+
+    <!-- 搜索弹窗 -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-close" id="searchClose">×</div>
+        <div class="search-content">
+            <form class="search-form" id="searchForm">
+                <input type="text" class="search-input" id="searchInput" placeholder="输入关键词搜索..." autocomplete="off">
+            </form>
+            <div class="search-results" id="searchResults">
+                <h3>搜索结果将显示在这里</h3>
+                <div id="resultsList"></div>
+            </div>
+        </div>
+    </div>
 
     <!-- 通知栏内容，显示联系方式 -->
 <div class="contact-notification" id="contact-notification">
@@ -381,9 +510,136 @@ h1, h2, h3, h4 {
     });
 </script>
 </footer>
-        
+             
     {% include tracking-footer.html %}
 
+    <!-- 搜索功能的JavaScript代码 -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // 搜索相关元素
+        const searchToggle = document.getElementById('search-toggle');
+        const searchOverlay = document.getElementById('searchOverlay');
+        const searchClose = document.getElementById('searchClose');
+        const searchForm = document.getElementById('searchForm');
+        const searchInput = document.getElementById('searchInput');
+        const resultsList = document.getElementById('resultsList');
+        
+        // 数据源（可以通过Ajax从服务器获取或使用Liquid模板直接插入）
+        const searchData = [
+            {% for post in site.posts %}
+            {
+                title: "{{ post.title | escape }}",
+                url: "{{ site.baseurl }}{{ post.url }}",
+                content: "{{ post.content | strip_html | strip_newlines | remove: '"' | escape | truncate: 200 }}",
+                date: "{{ post.date | date: '%Y-%m-%d' }}"
+            },
+            {% endfor %}
+            {% for page in site.pages %}
+            {% if page.title and page.url != '/' and page.url != '/404.html' %}
+            {
+                title: "{{ page.title | escape }}",
+                url: "{{ site.baseurl }}{{ page.url }}",
+                content: "{{ page.content | strip_html | strip_newlines | remove: '"' | escape | truncate: 200 }}",
+                date: ""
+            }{% unless forloop.last %},{% endunless %}
+            {% endif %}
+            {% endfor %}
+        ];
+        
+        // 打开搜索弹窗
+        if (searchToggle) {
+            searchToggle.addEventListener('click', function(e) {
+                e.preventDefault();
+                searchOverlay.classList.add('active');
+                setTimeout(() => {
+                    searchInput.focus();
+                }, 100);
+                document.body.style.overflow = 'hidden'; // 禁止背景滚动
+            });
+        }
+        
+        // 关闭搜索弹窗
+        if (searchClose) {
+            searchClose.addEventListener('click', function() {
+                searchOverlay.classList.remove('active');
+                document.body.style.overflow = ''; // 恢复背景滚动
+            });
+        }
+        
+        // 点击ESC键关闭搜索弹窗
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && searchOverlay.classList.contains('active')) {
+                searchOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+        
+        // 搜索功能
+        if (searchForm) {
+            searchForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                performSearch();
+            });
+            
+            // 实时搜索（输入时就开始搜索）
+            searchInput.addEventListener('input', function() {
+                performSearch();
+            });
+        }
+        
+        // 搜索逻辑
+        function performSearch() {
+            const query = searchInput.value.toLowerCase().trim();
+            
+            if (!query) {
+                resultsList.innerHTML = '<p>请输入搜索关键词...</p>';
+                return;
+            }
+            
+            const results = searchData.filter(item => 
+                item.title.toLowerCase().includes(query) || 
+                (item.content && item.content.toLowerCase().includes(query))
+            );
+            
+            if (results.length === 0) {
+                resultsList.innerHTML = '<p>没有找到匹配的结果</p>';
+                return;
+            }
+            
+            let html = '';
+            results.forEach(item => {
+                // 提取匹配内容周围的文本作为预览
+                let preview = '';
+                if (item.content) {
+                    const lowerContent = item.content.toLowerCase();
+                    const index = lowerContent.indexOf(query);
+                    if (index > -1) {
+                        // 获取查询词前后的一些文本作为预览
+                        const start = Math.max(0, index - 50);
+                        const end = Math.min(lowerContent.length, index + query.length + 50);
+                        preview = '...' + item.content.substring(start, end) + '...';
+                    } else {
+                        preview = item.content.substring(0, 100) + '...';
+                    }
+                }
+                
+                html += `
+                <div class="search-item">
+                    <a href="${item.url}" class="search-item-link">
+                        <h4>${item.title}</h4>
+                    </a>
+                    ${item.date ? `<p>${item.date}</p>` : ''}
+                    <p>${preview}</p>
+                </div>`;
+            });
+            
+            resultsList.innerHTML = html;
+        }
+        
+        // 初始状态下的提示
+        resultsList.innerHTML = '<p>请输入搜索关键词...</p>';
+    });
+    </script>
 
 </body>
 
