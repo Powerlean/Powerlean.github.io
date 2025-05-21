@@ -17,9 +17,9 @@ description: "品牌咨询, Brand Consulting Services, The MeMeCat, Graphic Desi
 
 /* ENTER光标闪烁动画 */
 @keyframes enterPulse {
-    0% { opacity: 0.7; }
+    0% { opacity: 1; }
     50% { opacity: 1; }
-    100% { opacity: 0.7; }
+    100% { opacity: 1; }
 }
 
 .carousel {
@@ -135,13 +135,13 @@ description: "品牌咨询, Brand Consulting Services, The MeMeCat, Graphic Desi
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #FBF604;
+    color: #000000;
     font-family: manrope, Arial;
     font-size: 24px;
     font-weight: normal;
     padding: 10px 20px;
-    border: 2px solid #FBF604;
-    animation: enterPulse 1.5s infinite ease-in-out;
+    background-color: #FBF604;
+    border: none;
     pointer-events: none;
     z-index: 5;
 }
@@ -196,6 +196,30 @@ document.addEventListener('DOMContentLoaded', function() {
         var activeIndex = carousel.find('.carousel-item.active').index() + 1;
         currentSlide.text(activeIndex);
     });
+
+    // 覆盖ENTER按钮样式
+    var styleSheet = document.createElement("style");
+    styleSheet.textContent = `
+        .carousel-link:hover::after {
+            content: 'ENTER' !important;
+            position: absolute !important;
+            top: 50% !important;
+            left: 50% !important;
+            transform: translate(-50%, -50%) !important;
+            color: #000000 !important;
+            font-family: manrope, Arial !important;
+            font-size: 24px !important;
+            font-weight: normal !important;
+            padding: 10px 20px !important;
+            background-color: #FBF604 !important;
+            border: none !important;
+            pointer-events: none !important;
+            z-index: 5 !important;
+            animation: none !important;
+            opacity: 1 !important;
+        }
+    `;
+    document.head.appendChild(styleSheet);
 
     // 添加视差滚动效果
     window.addEventListener('scroll', function() {
