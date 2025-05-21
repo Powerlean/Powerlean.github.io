@@ -1,0 +1,17 @@
+/* 覆盖ENTER按钮样式 */
+.carousel-link:hover::after {
+    content: 'ENTER';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+    font-family: manrope, Arial;
+    font-size: 24px;
+    font-weight: normal;
+    padding: 10px 20px;
+    background-color: #FBF604;
+    border: none;
+    pointer-events: none;
+    z-index: 5;
+} 
