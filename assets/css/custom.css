@@ -1,17 +1,26 @@
 /* 覆盖ENTER按钮样式 */
 .carousel-link:hover::after {
-    content: 'ENTER';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #000000;
-    font-family: manrope, Arial;
-    font-size: 24px;
-    font-weight: normal;
-    padding: 10px 20px;
-    background-color: #FBF604;
-    border: none;
-    pointer-events: none;
-    z-index: 5;
+    content: 'ENTER' !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    color: #000000 !important;
+    font-family: manrope, Arial !important;
+    font-size: 24px !important;
+    font-weight: normal !important;
+    padding: 10px 20px !important;
+    background-color: #FBF604 !important;
+    border: none !important;
+    pointer-events: none !important;
+    z-index: 5 !important;
+    animation: none !important;
+    opacity: 1 !important;
+} 
+
+/* 禁用原有的enterPulse动画 */
+@keyframes enterPulse {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    100% { opacity: 1; }
 } 
