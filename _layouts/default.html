@@ -268,7 +268,7 @@ h1, h2, h3, h4 {
         transition: transform 0.3s ease;
         width: 28px;
         height: 28px;
-        margin: 30px auto 0;  /* 将顶部边距从14px增加到30px，大幅向下移动图标 */
+        margin: 25px auto 0;  /* 将顶部边距从30px减小到25px，使图标略微上移 */
     }
     
     .search-link:hover .search-icon {
@@ -396,11 +396,12 @@ h1, h2, h3, h4 {
 
     /* 导航栏样式调整 */
     .navbar {
-        padding: 0.5rem 1rem; /* 调整导航栏内边距 */
+        padding: 0.2rem 1rem 0.3rem; /* 减小顶部内边距，使元素上移 */
     }
 
     .navbar-nav {
         align-items: center !important; /* 强制垂直居中对齐 */
+        margin-top: -5px; /* 添加负边距使元素上移 */
     }
 
     .nav-item {
@@ -409,15 +410,15 @@ h1, h2, h3, h4 {
     }
 
     .nav-link {
-        padding: 0.5rem 1rem;
+        padding: 0.3rem 0.8rem; /* 减小链接内边距 */
         display: flex;
         align-items: center;
     }
 
     .nav-link h2 {
         margin: 0; /* 移除h2的默认外边距 */
-        font-size: 2rem; /* 将字体大小从1.5rem增加到2rem */
-        line-height: 50px; /* 与logo的height保持一致 */
+        font-size: 1.6rem; /* 将字体大小从2rem减小到1.6rem */
+        line-height: 38px; /* 将行高从40px减小到38px */
     }
 </style>
 </head>
