@@ -232,6 +232,34 @@ h1, h2, h3, h4 {
     .menu-item:hover .en-text {
         opacity: 0;
     }
+
+    /* logo悬停效果 */
+    .navbar-brand {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .logo-default, .logo-expanded {
+        transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    
+    .logo-expanded {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    
+    .navbar-brand:hover .logo-default {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    
+    .navbar-brand:hover .logo-expanded {
+        transform: translateX(0);
+        opacity: 1;
+    }
 </style>
 </head>
 
@@ -251,7 +279,8 @@ h1, h2, h3, h4 {
     <nav id="MagicMenu" class="topnav navbar navbar-expand-lg navbar-light bg-black fixed-top">
     <div class="container">
         <a class="navbar-brand" href="/">
-<img src="/assets/images/thememecat.svg" alt="Hey!" width="80" height="50" style="user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; pointer-events: none;">
+            <img src="/assets/images/thememecat.svg" alt="TheMeMeCat" width="80" height="50" class="logo-default" style="user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;">
+            <img src="/assets/images/thememecat_full_horizon.svg" alt="TheMeMeCat" height="50" class="logo-expanded" style="user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;">
         </a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
        <span><img src="/assets/images/expend.svg" width="32" height="32"></span>
