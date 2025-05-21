@@ -246,9 +246,9 @@ h1, h2, h3, h4 {
     
     .logo-expanded {
         position: absolute;
-        top: 0;
+        top: 50%; /* 从顶部对齐改为中心对齐 */
         left: 0;
-        transform: translateX(-100%);
+        transform: translateX(-100%) translateY(-50%); /* 添加垂直居中变换 */
         opacity: 0;
     }
     
@@ -258,7 +258,7 @@ h1, h2, h3, h4 {
     }
     
     .navbar-brand:hover .logo-expanded {
-        transform: translateX(0);
+        transform: translateX(0) translateY(-50%); /* 保持垂直居中变换 */
         opacity: 1;
     }
 </style>
