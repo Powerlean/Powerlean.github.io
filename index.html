@@ -128,6 +128,17 @@ description: "品牌咨询, Brand Consulting Services, The MeMeCat, Graphic Desi
     transition: all 0.3s ease;
 }
 
+/* ENTER按钮果冻动画 */
+@keyframes jellyButton {
+    0%   { transform: translate(-50%, -50%) scale(1, 1); }
+    30%  { transform: translate(-50%, -50%) scale(1.15, 0.85); }
+    40%  { transform: translate(-50%, -50%) scale(0.95, 1.05); }
+    50%  { transform: translate(-50%, -50%) scale(1.05, 0.95); }
+    65%  { transform: translate(-50%, -50%) scale(0.98, 1.02); }
+    80%  { transform: translate(-50%, -50%) scale(1.02, 0.98); }
+    100% { transform: translate(-50%, -50%) scale(1, 1); }
+}
+
 /* 添加悬停效果 */
 .carousel-link:hover::after {
     content: 'ENTER';
@@ -144,6 +155,8 @@ description: "品牌咨询, Brand Consulting Services, The MeMeCat, Graphic Desi
     border: none;
     pointer-events: none;
     z-index: 5;
+    border-radius: 8px;
+    animation: jellyButton 0.8s ease-in-out;
 }
 
 .carousel-link:hover {
@@ -197,6 +210,23 @@ document.addEventListener('DOMContentLoaded', function() {
         currentSlide.text(activeIndex);
     });
 
+    // 添加视差滚动效果
+    window.addEventListener('scroll', function() {
+        var scrolled = window.pageYOffset;
+        var carouselImages = document.querySelectorAll('.carousel-item img');
+        
+        carouselImages.forEach(function(img) {
+            var translateY = scrolled * 0.3; // 调整这个值可以改变视差效果的强度
+            img.style.transform = 'translateY(' + translateY + 'px)';
+        });
+    });
+    
+    // 防止左右导航区域的点击事件传递到链接
+    $('.carousel-nav-left, .carousel-nav-right').on('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+    });
+
     // 覆盖ENTER按钮样式
     var styleSheet = document.createElement("style");
     styleSheet.textContent = `
@@ -215,28 +245,11 @@ document.addEventListener('DOMContentLoaded', function() {
             border: none !important;
             pointer-events: none !important;
             z-index: 5 !important;
-            animation: none !important;
-            opacity: 1 !important;
+            border-radius: 8px !important;
+            animation: jellyButton 0.8s ease-in-out !important;
         }
     `;
     document.head.appendChild(styleSheet);
-
-    // 添加视差滚动效果
-    window.addEventListener('scroll', function() {
-        var scrolled = window.pageYOffset;
-        var carouselImages = document.querySelectorAll('.carousel-item img');
-        
-        carouselImages.forEach(function(img) {
-            var translateY = scrolled * 0.3; // 调整这个值可以改变视差效果的强度
-            img.style.transform = 'translateY(' + translateY + 'px)';
-        });
-    });
-    
-    // 防止左右导航区域的点击事件传递到链接
-    $('.carousel-nav-left, .carousel-nav-right').on('click', function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-    });
 });
 </script>
 
