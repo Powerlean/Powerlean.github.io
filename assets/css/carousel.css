@@ -1,0 +1,17 @@
+/* 移动端响应式优化：在外部CSS文件（assets/css/carousel.css）中定义媒体查询 */
+@media (max-width: 767px) {
+  .carousel {
+    height: 30vh; /* 移动端下轮播高度降低 */
+  }
+  .carousel-caption h5 {
+    font-size: 1.5rem; /* 移动端下标题字体缩小 */
+  }
+  .carousel-caption p {
+    font-size: 1rem; /* 移动端下描述字体缩小 */
+  }
+  .carousel-nav-left, .carousel-nav-right {
+    width: 10%; /* 移动端下导航按钮区域缩小 */
+  }
+  /* 可选：移动端下隐藏caption，取消下面注释即可 */
+  /* .carousel-caption { display: none; } */
+} 
