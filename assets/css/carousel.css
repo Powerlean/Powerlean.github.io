@@ -1,13 +1,26 @@
-/* 移动端响应式优化：在外部CSS文件（assets/css/carousel.css）中定义媒体查询 */
+/* 移动端响应式优化：在外部CSS文件（assets/css/carousel.css）中定义媒体查询，进一步优化移动端布局，确保内容完整显示 */
 @media (max-width: 767px) {
+  /* 禁止页面横向滚动，避免内容溢出 */
+  html, body {
+    overflow-x: hidden;
+  }
   .carousel {
-    height: 30vh; /* 移动端下轮播高度降低 */
+    /* 将固定高度改为自适应，并增加overflow: hidden，确保内容完整 */
+    min-height: 30vh; /* 移动端下轮播高度自适应 */
+    overflow: hidden;
   }
   .carousel-caption h5 {
     font-size: 1.5rem; /* 移动端下标题字体缩小 */
   }
   .carousel-caption p {
     font-size: 1rem; /* 移动端下描述字体缩小 */
+  }
+  /* 调整caption位置，确保在移动端下分布正确，不溢出 */
+  .carousel-caption {
+    left: 1rem; /* 左移 */
+    bottom: 1rem; /* 下移 */
+    max-width: 100%; /* 增加宽度，避免溢出 */
+    padding: 0.5rem; /* 增加内边距，防止文字贴边 */
   }
   .carousel-nav-left, .carousel-nav-right {
     width: 10%; /* 移动端下导航按钮区域缩小 */
