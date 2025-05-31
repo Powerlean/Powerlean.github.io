@@ -4,10 +4,36 @@ layout: default
 permalink: /404.html
 description: "页面未找到"
 ---
+<style>
+  .container {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .big-text {
+    font-size: 15vw;
+    white-space: nowrap;
+    font-family: manrope;
+    color: #FBF604;
+    animation: slide 20s linear infinite;
+    position: absolute;
+    left: 0;
+  }
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+</style>
 
 <div class="container">
-  <h1>404</h1>
-  <p><strong>页面未找到</strong></p>
-  <p>您访问的页面不存在或已被移除。</p>
-  <p><a href="{{ site.baseurl }}/">返回首页</a></p>
+  <div class="big-text">There's nothing.</div>
 </div>
