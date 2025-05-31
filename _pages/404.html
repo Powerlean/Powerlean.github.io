@@ -1,0 +1,109 @@
+---
+title: "404 not found"
+layout: default
+permalink: /404.html
+description: "页面未找到"
+---
+
+<style>
+  .error-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  
+  .big-text-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 40px 0;
+  }
+  
+  .big-text {
+    font-size: clamp(2rem, 10vw, 8rem);
+    white-space: nowrap;
+    font-family: manrope;
+    color: #FBF604;
+    animation: slide 30s linear infinite;
+    position: relative;
+    display: inline-block;
+    padding: 0 20px;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .error-message {
+    text-align: center;
+    margin: 20px 0;
+    font-family: manrope;
+  }
+  
+  .error-message h1 {
+    font-size: clamp(2rem, 5vw, 4rem);
+    margin: 0;
+    color: #000;
+  }
+  
+  .error-message p {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: #666;
+    margin: 10px 0;
+  }
+  
+  .back-home {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #FBF604;
+    color: #000;
+    text-decoration: none;
+    border-radius: 4px;
+    font-family: manrope;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    margin-top: 20px;
+    transition: transform 0.2s ease;
+  }
+  
+  .back-home:hover {
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .big-text {
+      font-size: clamp(1.5rem, 8vw, 6rem);
+    }
+    
+    .error-message h1 {
+      font-size: clamp(1.8rem, 4vw, 3rem);
+    }
+    
+    .error-message p {
+      font-size: clamp(0.9rem, 1.8vw, 1.1rem);
+    }
+  }
+</style>
+
+<div class="error-container">
+  <div class="error-message">
+    <h1>404</h1>
+    <p>页面未找到</p>
+  </div>
+  
+  <div class="big-text-container">
+    <div class="big-text">There's nothing.</div>
+  </div>
+  
+  <a href="/" class="back-home">返回首页</a>
+</div> 
