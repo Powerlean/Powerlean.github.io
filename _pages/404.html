@@ -1,26 +1,40 @@
 ---
 title: "404 not found"
 layout: default
-pagination:
-    enabled: true
-description: ""
+permalink: /404.html
+description: "页面未找到"
 ---
 
-<style type="text/css" media="screen">
+<style>
   .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
   }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
+  .big-text {
+    font-size: 15vw;
+    white-space: nowrap;
+    font-family: manrope;
+    color: #FBF604;
+    animation: slide 20s linear infinite;
+    position: absolute;
+    left: 0;
+  }
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
   }
 </style>
 
 <div class="container">
-  <h1>404</h1>
-  <p><strong>Page not found</strong></p>
+  <div class="big-text">There's nothing.</div>
 </div>
