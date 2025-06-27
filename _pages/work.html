@@ -70,11 +70,11 @@ permalink: "/work.html"
 <div class="container mt-5 mb-5">
     <div class="row">
         {% for post in site.posts %}
-            {% if post.title != null %}
+        {% if post.title != null %}
                 <div class="col-12 col-md-6">
                     {% include work-grid-item.html %}
                 </div>
-            {% endif %}
+        {% endif %}
         {% endfor %}
     </div>
 </div>
