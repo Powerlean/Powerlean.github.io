@@ -693,7 +693,7 @@ article:first-letter {
 article h1,article h2,article h3,article h4,article h5,article h6,article .h1,article .h2,article .h3,article .h4,article .h5,article .h6 {
 	margin-bottom:2rem;
 	margin-top:2rem;
-	font-weight:700;
+	font-weight:400;
 	color: #FAF504;
 }
 .alertbar {
