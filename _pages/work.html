@@ -58,13 +58,38 @@ permalink: "/work.html"
 .work-link:hover {
     text-decoration: none;
 }
+
+@media (max-width: 767.98px) {
+    .work-item img {
+        height: 280px;
+    }
+
+    .work-caption {
+        padding: 25px 15px 15px;
+        transform: translateY(0);
+        opacity: 1;
+        background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0) 100%);
+    }
+
+    .work-item:hover .work-caption {
+        opacity: 1;
+    }
+
+    .work-title {
+        font-size: 1.1rem;
+    }
+
+    .work-description {
+        font-size: 0.9rem;
+    }
+}
 </style>
 
 <div class="container mt-5 mb-5">
     <div class="row">
         {% for post in site.posts %}
             {% if post.title != null %}
-                <div class="col-lg-6">
+                <div class="col-12 col-md-6">
                     {% include work-grid-item.html %}
                 </div>
             {% endif %}
