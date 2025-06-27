@@ -674,26 +674,27 @@ article blockquote {
 	position:relative;
 }
 article blockquote:before {
-	content:"“";
-	font-family:Georgia;
-	font-size:8rem;
-	margin:-1rem 2rem 0 -3.9rem;
+	content:"";
 	position:absolute;
-	opacity:1;
-	float:left;
-	line-height:1;
+	left:-30px;
+	top:0;
+	height:100%;
+	width:2px;
+	background:#FAF504;
 }
+/*
 article:first-letter {
+	font-size:3.85rem;
+	font-weight:700;
+	line-height:3rem;
 	float:left;
-	font-size:5em;
-	line-height:1;
-	margin:0 .2em 0 0;
-	vertical-align:top;
-}
+	margin-right:.5rem;
+}*/
 article h1,article h2,article h3,article h4,article h5,article h6,article .h1,article .h2,article .h3,article .h4,article .h5,article .h6 {
 	margin-bottom:2rem;
 	margin-top:2rem;
-	font-weight:600;
+	font-weight:700;
+	color: #FAF504;
 }
 .alertbar {
 	box-shadow:0 -3px 10px 0 rgba(0,0,0,.0785);
