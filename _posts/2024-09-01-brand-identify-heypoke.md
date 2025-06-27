@@ -2,6 +2,7 @@
 layout: post
 title:  HEYPOKE
 categories: [ 品牌识别<br>brand identify ]
+description: A tasty gift of marine.
 image: assets/images/heypoke_1.svg
 tags: [featured]
 ---
@@ -15,7 +16,7 @@ tags: [featured]
 ![](/assets/images/heypoke_3.svg)
 
 <figure class="half">
-<h1>The Poke bowl is a gift of marine.Inspire by the lively ocean & dining experience, we adopts an immersive and bright color palette along with a vibrant composition for its new brand identity.</h1>
+<h1>The Poke bowl is a gift of marine.Inspire by the lively ocean & dining experience of poke bowl, we adopts an immersive and bright color palette along with a vibrant composition for its new brand identity.</h1>
 <h2>Poke bowl来源于海洋的馈赠。启发于海的活泼和poke的用餐方式，新的品牌形象采用了更沉浸明透的配色与富有活力的构图。</h2>
 </figure>
 <img align="right" src="/assets/images/heypoke_4.svg">
