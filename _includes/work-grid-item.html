@@ -1,16 +1,16 @@
-<div class="work-item mb-4">
-    <a href="{{ site.baseurl }}{{ post.url }}" class="work-link">
+<a href="{{ site.baseurl }}{{ post.url }}" class="work-link">
+    <div class="work-item mb-4">
         {% if post.image %}
             <img src="{% if post.image contains "://" %}{{ post.image }}{% else %}{{ site.baseurl }}/{{ post.image }}{% endif %}" alt="{{ post.title }}" class="img-fluid">
         {% endif %}
-        <div class="work-caption mt-3">
-            <h5 class="work-title" style="font-weight: bold; color: #000;">{{ post.title }}</h5>
+        <div class="work-caption">
+            <h5 class="work-title">{{ post.title }}</h5>
             {% if post.description %}
-                <p class="work-description" style="color: #555;">{{ post.description }}</p>
+                <p class="work-description">{{ post.description }}</p>
             {% endif %}
         </div>
-    </a>
-</div>
+    </div>
+</a>
 
 <style>
 .work-link {
