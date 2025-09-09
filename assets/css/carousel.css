@@ -28,10 +28,10 @@
   /* 可选：移动端下隐藏caption，取消下面注释即可 */
   /* .carousel-caption { display: none; } */
   h1.hero-text {
-    word-break: break-word; overflow-wrap: break-word; white-space: normal; max-width: 100vw;
+    word-break: break-word; overflow-wrap: break-word; white-space: normal; max-width: 100vw; letter-spacing: -0.06em;
   }
   #left_box h4,
   #center_box h4 {
-    word-break: break-word; overflow-wrap: break-word; white-space: normal; max-width: 100vw;
+    word-break: break-word; overflow-wrap: break-word; white-space: normal; max-width: 100vw; letter-spacing: -0.06em;
   }
 } 
