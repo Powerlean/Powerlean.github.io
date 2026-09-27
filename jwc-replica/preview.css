@@ -1,0 +1,6 @@
+@font-face { font-family: FontAwesome; src: url('/assets/fontawesome-webfont.woff') format('woff'); font-weight: normal; font-style: normal; }
+#nav li:focus-within, #nav li.preview-open { position: relative; z-index: 200; }
+#nav li:focus-within ul.sub, #nav li.preview-open ul.sub { left: 0; top: 30px; background: #fff; border: 1px solid #d4d4d4; white-space: nowrap; width: 140px; height: auto; z-index: 300; }
+#nav li:focus-within ul.sub li, #nav li.preview-open ul.sub li { display: block; height: 30px; position: relative; float: left; width: 140px; font-weight: normal; line-height: 30px; }
+#nav li:focus-within ul.sub li a, #nav li.preview-open ul.sub li a { display: block; height: 30px; width: 140px; line-height: 30px; text-align: center; color: #fff; text-decoration: none; border-bottom: 1px solid #fff; }
+#nav ul.sub a:focus { background: #3a93d2; }
